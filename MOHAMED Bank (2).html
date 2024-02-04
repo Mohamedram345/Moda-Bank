@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Mohamed Bank</title>
+    <style>
+      *{
+        font-family:sans-serif;
+      }
+      body{
+        background-color:rgb(65, 65, 65);
+      }
+      .d{
+        width:600px;
+        height:700px;
+        background-color:antiquewhite;
+      }
+      #j{
+        font-size:80px;
+      }
+      #d,#g{
+        background-color:rgb(108, 171, 161);
+        border:18px;
+        border:gray;
+        outline:none;
+        width:550px;
+      }
+      .ram{
+        width:200px;
+        background-color:cadetblue;
+      }
+    </style>
+</head>
+<body>
+  <center><font id="j" size="80px" color="white">Mohamed Bank</font></center>
+  <center>
+  <div class="d">
+    
+  <h1></h1>
+<hr>
+<input type="number" placeholder="Dollar" id="d">
+<h1></h1>
+<input type="number" placeholder="EGP" id="g">
+<hr>
+<hr>
+<h2>السلام عليكم و رحمة الله و بركاته</h2>
+<h2>في هذا البرنامج يتم تحويل قيمة الدولار</h2>
+<h2>بالنسبة للجنيه المصري و العكس من خلال</h2>
+<h2>الاعتماد على جوجل</h2>
+<hr>
+<hr>
+<h1>حاليا</h1>
+<h1></h1>
+<h2>الدولار الواحد بالنسبة للجنيه المصري 31</h2>
+<h1></h1>
+<div class="ram">
+<font size="23px" color="red">في البنوك</font>
+</div>
+<h1></h1>
+<hr>
+<hr>
+</div>
+</center>
+<script>
+  // style
+ let b=document.body;
+ b.style.margin="0";
+ b.style.border="0";
+let d=document.getElementById("d");
+let g=document.getElementById("g");
+d.style.fontSize="50px";
+g.style.fontSize="50px";
+d.style.padding="20px;";
+g.style.padding="20px;";
+d.style.padding="black";
+g.style.padding="black";
+// run
+d.onkeyup=function(){
+  g.value=d.value*31;
+}
+g.onkeyup=function(){
+  d.value=g.value/31;
+}
+</script>
+</body>
+</html>
